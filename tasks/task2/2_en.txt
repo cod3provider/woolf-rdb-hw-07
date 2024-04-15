@@ -1,0 +1,5 @@
+/-- 2. Write an SQL query that adds one day to the 'date' attribute in the 'orders' table. Display the 'id' attribute, the original 'date' attribute, and the result of the addition on the screen.. --/
+
+select id, date,
+date + interval 1 day as added_day
+from orders;
