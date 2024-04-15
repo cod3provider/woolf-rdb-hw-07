@@ -1,0 +1,6 @@
+
+/-- 5. Напишіть SQL-запит, який для таблиці orders виводить на екран атрибут id, атрибут date та JSON-об’єкт {"id": <атрибут id рядка>, "date": <атрибут date рядка>}. Для створення JSON-об’єкта використайте функцію. --/
+
+select id, date,
+json_object('id', id, 'date', date) as json_data
+from orders;

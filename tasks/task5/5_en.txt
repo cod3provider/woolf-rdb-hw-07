@@ -1,0 +1,5 @@
+/-- 5. Write an SQL query that outputs the 'id' attribute, the 'date' attribute, and a JSON object {"id": <row's id attribute>, "date": <row's date attribute>} for the 'orders' table. Utilize a function to create the JSON object. --/
+
+select id, date,
+json_object('id', id, 'date', date) as json_data
+from orders;
