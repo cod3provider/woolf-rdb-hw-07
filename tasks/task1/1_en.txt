@@ -1,0 +1,7 @@
+/-- 1. Write an SQL query that extracts the year, month, and day from the 'date' attribute in the 'orders' table. Display them on the screen in three separate attributes alongside the 'id' attribute and the original 'date' attribute (total of 5 attributes). --/
+
+select id,
+date_format(date, '%Y') as year,
+date_format(date, '%M') as month,
+date_format(date, '%d') as day,
+date from orders;
