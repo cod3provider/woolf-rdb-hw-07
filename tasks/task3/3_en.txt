@@ -1,0 +1,5 @@
+/-- 3. Write an SQL query that displays the number of seconds from the beginning of the epoch for the 'date' attribute in the 'orders' table (displaying its timestamp value). To achieve this, you need to find and apply the necessary function. Display the 'id' attribute, the original 'date' attribute, and the result of the function's operation on the screen. --/
+
+select id, date,
+unix_timestamp(date) as seconds_from_begin
+from orders;
